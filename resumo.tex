@@ -1,0 +1,49 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazil]{babel}
+\usepackage[top=3cm,bottom=2cm,left=3cm,right=2cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{ragged2e}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+\include{commands}
+\include{conteudo/capa}
+% Contracapa
+\newpage
+\pagestyle{empty}
+\begin{center}
+    \large \textbf{\MakeUppercase{\autor}}
+    \vskip 6cm
+    \Huge \textbf{\large \MakeUppercase{\tema}}
+    \vskip 5cm
+\end{center}
+    \hfill{\vbox{\hsize=8.5cm\noindent\strut
+    Resumo do Projeto de Pesquisa apresentado ao \instituicao, em cumprimento a exigências da disciplina \textbf{Monografia 1}, do curso de Bacharel em Teologia.}\\
+    \strut}
+    \vskip 3.0cm
+\begin{center}
+    \vfill
+    \large
+    Rio de Janeiro \\
+    2025
+\end{center}
+
+\begin{center}
+    \large \textbf{RESUMO}
+\end{center}
+
+\vspace{1cm}
+
+\begin{justify}
+    Esta pesquisa investiga os desafios e responsabilidades das igrejas no uso da tecnologia, com ênfase na proteção de dados sensíveis e na privacidade no contexto da comunhão cristã. Partindo de princípios bíblicos sobre ética e dignidade humana, o estudo explora como a fidelidade às Escrituras pode orientar uma gestão ética e segura das informações no ambiente eclesiástico. Aborda os riscos do uso inadequado da tecnologia, como a negligência na proteção de dados e seus impactos na vida comunitária, além de analisar a relação entre tecnologia e transparência, considerando as implicações legais e pastorais na administração de informações sensíveis. A fundamentação teórica apoia-se na Confissão de Fé de Westminster, nas Escrituras Sagradas e em autores cristãos que discutem ética e tecnologia. Propõe-se diretrizes para uma governança digital ética, reforçando o compromisso das igrejas com a privacidade e a promoção de uma comunhão segura e responsável.
+\end{justify}
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{Palavras-chave:} Tecnologia. Privacidade. Igreja. Ética cristã. Segurança de dados.
+
+\end{document}

@@ -10,26 +10,15 @@
 \usepackage{fontspec}
 \setmainfont{DejaVu Sans}
 
-\newcommand{\instituicao}{Seminário Teológico Presbiteriano rev. Ashbel Green Simonton}
-\newcommand{\tema}{Tecnologia e privacidade no contexto da comunhão cristã}
-\newcommand{\autor}{Vitor Mattos de Souza}
+\include{commands}
 
 \begin{document}
 
 \hypersetup{pageanchor=false}  % Evita âncoras duplicadas
 
-\include{paginas/capa}
+\include{conteudo/capa}
 
-\include{paginas/contracapa.tex}
-
-\newpage
-\pagestyle{plain}
-\pagenumbering{arabic}
-\begin{center}
-    {\small Este documento está licenciado sob a licença \href{https://creativecommons.org/licenses/by-nc-sa/4.0/}{Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International}.\\
-    Você pode copiar, modificar e distribuir esta obra, desde que atribua o crédito apropriado, **não a utilize para fins comerciais** e distribua as obras derivadas sob a mesma licença.}
-\end{center}
-
+\include{conteudo/contracapa.tex}
 
 % DESENVOLVIMENTO
 \newpage
@@ -58,7 +47,7 @@ Decorrem do tema as seguintes hipóteses:
 \noindent
 \textbf{Justificativa:} A escolha do tema "\tema" se fundamenta na relevância de refletir sobre os desafios éticos e administrativos que as igrejas enfrentam em um mundo cada vez mais tecnológico. Considerando a crescente utilização da tecnologia pelas igrejas, seja em atividades administrativas, na promoção da comunhão cristã ou na proclamação do evangelho, é necessário utilizar-se de princípios bíblicos para uso consciente, ético e legal de dados no contexto das igrejas e suas atividades.
 
-O uso inadequado da tecnologia compromete valores essenciais da fé cristã e pode levar ao descumprimento de leis, impactando a vida cristã de líderes e membros. Isso reforça a necessidade de uma gestão ética e responsável dos dados sensíveis. A segurança, o respeito às leis e a implementação de políticas claras precisam ser debatidos nas igrejas por suas lideranças para fortalecer o testemunho cristão e assegurar que a igreja local reflita princípios bíblico e cristãos em todos os aspectos da vida comunitária.
+O uso inadequado da tecnologia compromete valores essenciais da fé cristã e pode levar ao descumprimento de leis, impactando a vida cristã de líderes e membros. Isso reforça a necessidade de uma gestão ética e responsável dos dados sensíveis. A segurança, o respeito às leis e a implementação de políticas claras precisam ser debatidos nas igrejas por suas lideranças para fortalecer o testemunho cristão e assegurar que a igreja local reflita princípios bíblicos e cristãos em todos os aspectos da vida comunitária.
 
 \noindent
 \textbf{Objetivo geral:} Investigar os desafios e responsabilidades das igrejas no uso da tecnologia, considerando princípios bíblicos e a necessidade de proteger dados sensíveis de forma ética e legal.
@@ -112,44 +101,7 @@ A Metodologia a ser empregada no trabalho é a pesquisa bibliográfica, e será 
     \item Elaboração de propostas para solução do problema
 \end{enumerate}
 
-\noindent
-\textbf{Cronograma:}
-
-\begin{table}[h]
-    \centering
-    \renewcommand{\arraystretch}{1.3}
-    \begin{tabularx}{\textwidth}{|c|X|}
-        \hline
-        \textbf{Data} & \textbf{Etapa do Cronograma} \\
-        \hline
-        Janeiro  & Etapa de orientação do trabalho para definição de conteúdo e forma \\
-        \hline
-        6 a 7 de fevereiro  & Apresentação projeto de monografia \\
-        \hline
-        15 de março  & Entrega do 1º capítulo \\
-        \hline
-        15 de abril  & Entrega do 2º capítulo \\
-        \hline
-        15 de maio  & Entrega do 3º capítulo \\
-        \hline
-        15 de junho  & Entrega das Considerações Finais e Introdução \\
-        \hline
-        15 de julho  & Entrega completa ao orientador para revisão parcial \\
-        \hline
-        15 de agosto  & Entrega completa ao orientador para revisão final \\
-        \hline
-        15 de setembro  & Entrega completa ao orientador \\
-        \hline
-        30 de setembro  & Entrega ao seminário \\
-        \hline
-        1 a 15 de outubro  & Defesa em Banca \\
-        \hline
-        28 de novembro  & Entrega do trabalho após as correções da Banca Examinadora \\
-        \hline
-    \end{tabularx}
-    \caption{Cronograma do trabalho}
-    \label{tab:cronograma}
-\end{table}
+\include{conteudo/cronograma}
 
 \bibliography{bibliografia}
 
