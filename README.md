@@ -1,4 +1,4 @@
-# Tecnologia e privacidade no contexto da comunhão cristã
+# A comunhão cristã frente aos dilemas da ética digital
 
 Projeto de monografia a ser entregue no [STPS - Seminário Teológico Presbiteriano Simonton](https://seminariosimonton.com.br/)
 
