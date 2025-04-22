@@ -1,0 +1,28 @@
+name: Compile PDF
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/xu-cheng/texlive-full
+
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v3
+
+      - name: Compile PDF
+        run: |
+          make
+
+      - name: Publish
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
