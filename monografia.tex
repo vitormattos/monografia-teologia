@@ -10,27 +10,25 @@
 \usepackage{fontspec}
 \usepackage{ragged2e}
 \setmainfont{DejaVu Sans}
+\renewcommand{\baselinestretch}{1.5}
+\normalsize
 
 \begin{document}
 
 \input{conteudo/commands}
 
-\hypersetup{pageanchor=false}  % Evita âncoras duplicadas
-
 \input{conteudo/capa}
+
+\pagenumbering{roman}
+\pagestyle{empty}
 
 \input{conteudo/monografia/contracapa}
 
 \input{conteudo/licença}
 
-\newpage
-\pagestyle{plain}
-\pagenumbering{arabic}
-\renewcommand{\baselinestretch}{1.5}
-\normalsize
-
 % Folha de aprovação
 \input{conteudo/monografia/folha_aprovacao}
+
 % Resumo
 \newpage
 \begin{center}
@@ -47,7 +45,7 @@
 \noindent
 \textbf{Palavras-chave:} \textit{\palavrasChave}
 
-% Abstact
+% Abstract
 \newpage
 \begin{center}
     \large \textbf{\MakeUppercase{Abstract}}
@@ -63,32 +61,29 @@
 \noindent
 \textbf{Keywords:} \textit{\keywords}
 
-% SUMÁRIO
+% Sumário
 \newpage
 \thispagestyle{empty}
 \tableofcontents
 
-% Conteúdo
+% Elementos textuais
 \newpage
-\pagestyle{plain}
 \pagenumbering{arabic}
-\renewcommand{\baselinestretch}{1.5}
-\normalsize
+\pagestyle{plain}
+
+\section{Introdução}
+
+\newpage
 \section{Fundamentos bíblicos e históricos da comunhão cristã}
 
 \newpage
-\pagestyle{plain}
-\pagenumbering{arabic}
-\renewcommand{\baselinestretch}{1.5}
-\normalsize
 \section{Riscos éticos da era digital que ameaçam a vivência da comunhão}
 
 \newpage
-\pagestyle{plain}
-\pagenumbering{arabic}
-\renewcommand{\baselinestretch}{1.5}
-\normalsize
 \section{Propostas teológicas e éticas para preservar a comunhão em contextos digitais}
+
+\newpage
+\section{Considerações finais}
 
 \newpage
 \bibliography{referencias/bibliografia}
