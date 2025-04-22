@@ -1,3 +1,5 @@
+[![Download PDF](https://img.shields.io/badge/baixar-pdf-blue?style=flat&logo=readthedocs)](https://vitormattos.github.io/monografia-teologia/monografia.pdf)
+
 # A comunhão cristã frente aos dilemas da ética digital
 
 Monografia a ser entregue no [STPS - Seminário Teológico Presbiteriano Simonton](https://seminariosimonton.com.br/)
