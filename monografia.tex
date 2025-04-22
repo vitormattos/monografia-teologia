@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[brazil]{babel}
+\usepackage[autostyle=true]{csquotes}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue, pdfborder={0 0 0}]{hyperref}
+\usepackage[alf]{abntex2cite}
+\usepackage[top=3cm,bottom=2cm,left=3cm,right=2cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+
+\begin{document}
+
+\include{conteudo/commands}
+
+\hypersetup{pageanchor=false}  % Evita âncoras duplicadas
+
+\include{conteudo/capa}
+
+\include{conteudo/monografia/contracapa}
+
+\include{conteudo/licença}
+
+\newpage
+\pagestyle{plain}
+\pagenumbering{arabic}
+\renewcommand{\baselinestretch}{1.5}
+\normalsize
+
+\noindent
+Capítulo 1: Fundamentos bíblicos e históricos da comunhão cristã
+
+\noindent
+Capítulo 2: Riscos éticos da era digital que ameaçam a vivência da comunhão
+
+\noindent
+Capítulo 3: Propostas teológicas e éticas para preservar a comunhão em contextos digitais
+
+\bibliography{referencias/bibliografia}
+
+\end{document}
