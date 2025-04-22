@@ -1,6 +1,7 @@
 services:
   latex:
-    build: .
+    build:
+      context: .docker/
     volumes:
       - ./:/latex
     working_dir: /latex
