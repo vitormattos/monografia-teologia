@@ -8,6 +8,7 @@
 \usepackage{indentfirst}
 \usepackage{tabularx}
 \usepackage{fontspec}
+\usepackage{ragged2e}
 \setmainfont{DejaVu Sans}
 
 \begin{document}
@@ -28,6 +29,40 @@
 \renewcommand{\baselinestretch}{1.5}
 \normalsize
 
+% Reesumo
+\newpage
+\begin{center}
+    \large \textbf{\MakeUppercase{Resumo}}
+\end{center}
+
+\vspace{1cm}
+
+\justifying
+\input{conteudo/resumo/pt_BR.txt}
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{Palavras-chave:} \textit{\palavrasChave}
+
+% Abstact
+\newpage
+\begin{center}
+    \large \textbf{\MakeUppercase{Abstract}}
+\end{center}
+
+\vspace{1cm}
+
+\justifying
+\input{conteudo/resumo/en_US.txt}
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{Keywords:} \textit{\keywords}
+
+% Conteúdo
+\newpage
 \noindent
 Capítulo 1: Fundamentos bíblicos e históricos da comunhão cristã
 
