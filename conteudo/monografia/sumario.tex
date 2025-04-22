@@ -1,0 +1,28 @@
+\newpage
+\thispagestyle{empty}
+
+% Ajustar o espaçamento entre o item e o número da página
+\renewcommand{\cftdotsep}{1} % mais próximo
+% valores comuns: 1 (juntos), 2.5 (padrão), 4 (espaçados)
+
+
+% Utiliza pontos separando o item e o número da página
+\renewcommand{\cftsecdotsep}{\cftdotsep} % Para seções
+\renewcommand{\cftsubsecdotsep}{\cftdotsep} % Para subseções
+
+% Remove o negrito dos pontos
+\renewcommand{\cftsecleader}{\normalfont\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftsubsecleader}{\normalfont\cftdotfill{\cftsecdotsep}}
+\renewcommand{\cftsubsubsecleader}{\normalfont\cftdotfill{\cftsecdotsep}}
+
+% Remove o negrito das entradas
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\renewcommand{\cftsubsubsecfont}{\normalfont}
+
+% Remove o negrito dos números de página
+\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsubsecpagefont}{\normalfont}
+\renewcommand{\cftsubsubsecpagefont}{\normalfont}
+
+\tableofcontents

@@ -8,6 +8,7 @@
 \usepackage{indentfirst}
 \usepackage{tabularx}
 \usepackage{fontspec}
+\usepackage{tocloft} % formatar o tableofcontent (sumário)
 \usepackage{ragged2e}
 \setmainfont{DejaVu Sans}
 \renewcommand{\baselinestretch}{1.5}
@@ -62,9 +63,7 @@
 \textbf{Keywords:} \textit{\keywords}
 
 % Sumário
-\newpage
-\thispagestyle{empty}
-\tableofcontents
+\input{conteudo/monografia/sumario}
 
 % Elementos textuais
 \newpage
