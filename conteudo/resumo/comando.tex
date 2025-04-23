@@ -1,0 +1,21 @@
+\newcommand{\resumoIdioma}[1]{%
+  \newpage
+  \begin{center}
+    \large \textbf{\MakeUppercase{%
+      \ifstrequal{#1}{pt_BR}{Resumo}{%
+      \ifstrequal{#1}{en_US}{Abstract}{#1}}}}
+  \end{center}
+
+  \vspace{1cm}
+  \justifying
+  \input{conteudo/resumo/#1.txt}
+
+  \vspace{0.5cm}
+  \noindent
+  \ifstrequal{#1}{pt_BR}{
+    \textbf{Palavras-chave:} \textit{\palavrasChave}
+  }{
+    \ifstrequal{#1}{en_US}{
+      \textbf{Keywords:} \textit{\keywords}
+    }{}}
+}

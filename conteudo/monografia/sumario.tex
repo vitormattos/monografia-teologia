@@ -1,10 +1,8 @@
 \newpage
-\thispagestyle{empty}
 
 % Ajustar o espaçamento entre o item e o número da página
 \renewcommand{\cftdotsep}{1} % mais próximo
 % valores comuns: 1 (juntos), 2.5 (padrão), 4 (espaçados)
-
 
 % Utiliza pontos separando o item e o número da página
 \renewcommand{\cftsecdotsep}{\cftdotsep} % Para seções
@@ -25,4 +23,5 @@
 \renewcommand{\cftsubsecpagefont}{\normalfont}
 \renewcommand{\cftsubsubsecpagefont}{\normalfont}
 
+\pagenumbering{gobble}
 \tableofcontents
