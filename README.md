@@ -1,6 +1,6 @@
 [![Download PDF](https://img.shields.io/badge/baixar-pdf-blue?style=flat&logo=readthedocs)](https://vitormattos.github.io/monografia-teologia/monografia.pdf)
 
-# A comunhão cristã frente aos dilemas da ética digital
+# A comunhão dos santos frente aos dilemas da ética digital
 
 Monografia a ser entregue no [STPS - Seminário Teológico Presbiteriano Simonton](https://seminariosimonton.com.br/)
 
@@ -29,7 +29,7 @@ Instale as dependências que estão descritas no Makefile ou no Dockerfile e dep
 
 ## Licença
 
-[A comunhão cristã frente aos dilemas da ética digital](https://github.com/vitormattos/monografia-teologia)  
+[A comunhão dos santos frente aos dilemas da ética digital](https://github.com/vitormattos/monografia-teologia)  
 por [Vitor Mattos de Souza](https://github.com/vitormattos) está licenciado sob a  
 [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1).
 
