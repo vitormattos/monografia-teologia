@@ -1,10 +1,8 @@
 \newcommand{\resumoIdioma}[1]{%
   \newpage
-  \begin{center}
-    \textbf{\MakeUppercase{%
+  \pretextualchapter{%
       \ifstrequal{#1}{pt_BR}{Resumo}{%
-      \ifstrequal{#1}{en_US}{Abstract}{#1}}}}
-  \end{center}
+      \ifstrequal{#1}{en_US}{Abstract}{#1}}}
 
   \vspace{1cm}
   \justifying

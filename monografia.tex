@@ -1,31 +1,25 @@
-\documentclass[12pt,a4paper]{article}
-\usepackage[acronym]{glossaries}
+\documentclass[12pt, openright, oneside, a4paper, english, brazil]{abntex2}
+\usepackage[noredefwarn]{glossaries}
 \usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{abntex2cite}
 \usepackage[autostyle=true]{csquotes}
 \usepackage{graphicx}
-\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=blue, pdfborder={0 0 0}]{hyperref}
-\usepackage[alf]{abntex2cite}
-\usepackage[top=3cm,bottom=2cm,left=3cm,right=2cm]{geometry}
-\usepackage{indentfirst}
 \usepackage{tabularx}
 \usepackage{fontspec}
 \usepackage{tocloft} % formatar o tableofcontent (sumário)
 \usepackage{ragged2e}
+\input{conteudo/commands}
 
 \makeglossaries
 
 \setmainfont{DejaVu Sans}
-\renewcommand{\baselinestretch}{1.5}
-\normalsize
 
 \begin{document}
-
-\input{conteudo/commands}
 
 \input{conteudo/capa}
 
 \pagenumbering{roman}
-\pagestyle{empty}
 
 \input{conteudo/monografia/contracapa}
 
@@ -46,13 +40,10 @@
 \resumoIdioma{pt_BR}
 \resumoIdioma{en_US}
 
-% Sumário
 \input{conteudo/monografia/sumario}
 
-% Elementos textuais
-\newpage
+\textual
 \pagenumbering{arabic}
-\pagestyle{plain}
 
 \input{conteudo/monografia/introducao}
 
@@ -62,7 +53,7 @@
 
 \input{conteudo/monografia/consideracoes_finais}
 
-\newpage
+\postextual
 \bibliography{referencias/bibliografia}
 
 \end{document}
