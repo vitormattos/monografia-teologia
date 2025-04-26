@@ -1,18 +1,18 @@
 \documentclass[12pt, openright, oneside, a4paper, english, brazil]{abntex2}
 \usepackage[noredefwarn]{glossaries}
+\makeglossaries
 \usepackage[
     alf,
     abnt-emphasize=bf % títulos em negrito na bibliografia
 ]{abntex2cite} % Citações padrão ABNT
 \usepackage[T1]{fontenc}
 \usepackage{fontspec}
-\usepackage{indentfirst}
-\input{conteudo/commands}
-
-\makeglossaries
-
-% \setmainfont{DejaVu Sans}
+\usepackage{libertine} % Necessário para fontes Liberation
 \setmainfont{Liberation Sans}
+% \setmainfont{DejaVu Sans}
+\usepackage{indentfirst} % Indenta a primeira linha de um bloco de texto com um ou mais parágrafos. Apenas afeta a primeira linha.
+\usepackage{hyperref}
+\input{conteudo/commands}
 
 \begin{document}
 \pagenumbering{roman}
