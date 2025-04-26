@@ -1,35 +1,25 @@
-\newpage
-
-\begin{center}
-    \textbf{\MakeUppercase{\imprimirautor}} \\
-    \vspace{1.7cm}
-    \textbf{\MakeUppercase{\imprimirtitulo}} \\
-    \vspace{1.7cm}
-    \parbox{12cm}{\imprimirpreambulo}
-
-    \vspace{1cm}
-    Aprovada em \imprimirdata.
-    \vspace{1.5cm}
-
-    \textbf{\MakeUppercase{Banca examinadora}:}
-    \vspace{1.5cm}
-
-    \rule{12cm}{0.4pt} \\
-    Prof. \orientador \\
-    \textit{Instituição do orientador}
-    \vspace{1cm}
-
-    \rule{12cm}{0.4pt} \\
-    Prof. Segundo membro \\
-    \textit{Instituição ou titulação}
-    \vspace{1cm}
-
-    \rule{12cm}{0.4pt} \\
-    Prof. Terceiro membro \\
-    \textit{Instituição ou titulação}
-
-    \vfill
-
-    \textbf{\imprimirlocal} \\
-    \textbf{\imprimirdata}
-\end{center}
+\begin{folhadeaprovacao}
+  \begin{center}
+    {\ABNTEXchapterfont\large\imprimirautor}
+    \vspace*{\fill}\vspace*{\fill}
+    \begin{center}
+      \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+    \end{center}
+    \vspace*{\fill}
+    \hspace{.45\textwidth}
+    \begin{minipage}{.5\textwidth}
+      \imprimirpreambulo
+    \end{minipage}%
+    \vspace*{\fill}
+    Aprovado em: \imprimirlocal, \rule{1cm}{1pt} de \rule{4cm}{1pt} de \imprimirdata.
+  \end{center}
+  \assinatura{\textbf{\imprimirorientador} \\ Orientador}
+  \assinatura{\textbf{Professor} \\ Convidado 1}
+  \assinatura{\textbf{Professor} \\ Convidado 2}
+  \begin{center}
+    \vspace*{0.5cm}
+    \imprimirlocal
+    \par
+    \imprimirdata
+  \end{center}
+\end{folhadeaprovacao}

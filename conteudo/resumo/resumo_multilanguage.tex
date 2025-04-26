@@ -2,10 +2,10 @@
   \newpage
   \pretextualchapter{%
       \ifstrequal{#1}{pt_BR}{Resumo}{%
-      \ifstrequal{#1}{en_US}{Abstract}{#1}}}
+      \ifstrequal{#1}{en_US}{Abstract}{#1}}
+  }
 
   \vspace{1cm}
-  \justifying
   \begin{sloppypar}
   \input{conteudo/resumo/#1.txt}
   \end{sloppypar}
@@ -19,3 +19,6 @@
       \textbf{Keywords:} \textit{\keywords}
     }{}}
 }
+
+\resumoIdioma{pt_BR}
+\resumoIdioma{en_US}

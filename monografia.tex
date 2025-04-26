@@ -1,48 +1,36 @@
 \documentclass[12pt, openright, oneside, a4paper, english, brazil]{abntex2}
 \usepackage[noredefwarn]{glossaries}
-\usepackage[brazil]{babel}
+\usepackage[
+    alf,
+    abnt-emphasize=bf % títulos em negrito na bibliografia
+]{abntex2cite} % Citações padrão ABNT
 \usepackage[T1]{fontenc}
-\usepackage{abntex2cite}
-\usepackage[autostyle=true]{csquotes}
-\usepackage{graphicx}
-\usepackage{tabularx}
 \usepackage{fontspec}
-\usepackage{tocloft} % formatar o tableofcontent (sumário)
-\usepackage{ragged2e}
+\usepackage{indentfirst}
 \input{conteudo/commands}
 
 \makeglossaries
 
-\setmainfont{DejaVu Sans}
+% \setmainfont{DejaVu Sans}
+\setmainfont{Liberation Sans}
 
 \begin{document}
-
-\input{conteudo/capa}
-
 \pagenumbering{roman}
-
+\OnehalfSpacing
+\input{conteudo/capa}
 \input{conteudo/monografia/contracapa}
-
 \input{conteudo/licença}
-
 \input{conteudo/monografia/folha_aprovacao}
-
 \input{conteudo/monografia/dedicatoria}
-
 \input{conteudo/monografia/agradecimentos}
-
 \input{conteudo/monografia/epigrafe}
-
 \input{conteudo/monografia/siglas}
-
-% Resumo
-\input{conteudo/resumo/comando}
-\resumoIdioma{pt_BR}
-\resumoIdioma{en_US}
-
+\input{conteudo/resumo/resumo}
 \input{conteudo/monografia/sumario}
 
 \textual
+
+\newpage
 \pagenumbering{arabic}
 
 \input{conteudo/monografia/introducao}
@@ -54,6 +42,7 @@
 \input{conteudo/monografia/consideracoes_finais}
 
 \postextual
-\bibliography{referencias/bibliografia}
+
+\input{conteudo/referencias/bibliografia}
 
 \end{document}
