@@ -2,9 +2,7 @@
 
 Monografia a ser entregue no [STPS - Seminário Teológico Presbiteriano Simonton](https://seminariosimonton.com.br/)
 
-## Visualizar
-
-|Formato| |
+|Formato|Acesso|
 |---|---|
 |PDF|[![Download PDF](https://img.shields.io/badge/baixar-pdf-blue?style=flat&logo=readthedocs)](https://vitormattos.github.io/monografia-teologia/monografia.pdf)|
 |Overleaf|[![Download PDF](https://img.shields.io/badge/Overleaf-47A141?style=for-the-badge&logo=Overleaf&logoColor=white)](https://www.overleaf.com/read/vzwycrgmdtty#e2ef1e)|
