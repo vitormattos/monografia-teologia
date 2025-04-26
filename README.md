@@ -1,31 +1,13 @@
-[![Download PDF](https://img.shields.io/badge/baixar-pdf-blue?style=flat&logo=readthedocs)](https://vitormattos.github.io/monografia-teologia/monografia.pdf)
-
 # A comunhão dos santos frente aos dilemas da ética digital
 
 Monografia a ser entregue no [STPS - Seminário Teológico Presbiteriano Simonton](https://seminariosimonton.com.br/)
 
-## Edição local
+## Visualizar
 
-Sugestão: Use a extensão LaTeX para o Codium
-
-## Geração de PDF
-
-### Usando Docker
-
-```
-docker build . -t latex
-docker run -it --rm -v $PWD:/latex latex sh -c "make"
-```
-
-### Usando docker compose
-
-```
-docker compose up
-```
-
-### Sem uso de Docker
-
-Instale as dependências que estão descritas no Makefile ou no Dockerfile e depois execute o comando [make](Makefile) na raiz do projeto.
+|Formato| |
+|---|---|
+|PDF|[![Download PDF](https://img.shields.io/badge/baixar-pdf-blue?style=flat&logo=readthedocs)](https://vitormattos.github.io/monografia-teologia/monografia.pdf)|
+|Overleaf|[![Download PDF](https://img.shields.io/badge/Overleaf-47A141?style=for-the-badge&logo=Overleaf&logoColor=white)](https://www.overleaf.com/read/vzwycrgmdtty#e2ef1e)|
 
 ## Licença
 
