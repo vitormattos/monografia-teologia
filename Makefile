@@ -26,8 +26,8 @@ monografia:
 	lualatex --synctex=1 --interaction=nonstopmode --file-line-error --recorder --output-directory=$(output_dir) $(current_dir)/monografia.tex; \
 	bibtex $(output_dir)/monografia; \
 	lualatex --synctex=1 --interaction=nonstopmode --file-line-error --recorder --output-directory=$(output_dir) $(current_dir)/monografia.tex; \
-	lualatex --synctex=1 --interaction=nonstopmode --file-line-error --recorder --output-directory=$(output_dir) $(current_dir)/monografia.tex
-	mkdir -p public
+	lualatex --synctex=1 --interaction=nonstopmode --file-line-error --recorder --output-directory=$(output_dir) $(current_dir)/monografia.tex; \
+	mkdir -p public; \
 	cp $(output_dir)/monografia.pdf public/monografia.pdf
 
 clean:
