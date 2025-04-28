@@ -5,6 +5,7 @@
 # * wget
 
 current_dir = $(shell pwd)
+output_dir = $(shell pwd)
 
 all: clean build
 
