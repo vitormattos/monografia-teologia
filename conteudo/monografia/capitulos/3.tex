@@ -138,7 +138,7 @@ No ambiente digital, é essencial que a igreja atue com discernimento e zelo, es
 O Código de Disciplina da \gls{ipb} estabelece:
 
 \begin{citacao}
-    \textbf{Art. 4º}. Falta é tudo que, na doutrina e prática dos membros e concílios da igreja, não esteja de conformidade com os ensinos da Sagrada Escritura, ou transgrida e prejudique a paz, a unidade, a pureza, a ordem e a boa administração da comunidade cristã.
+    \textbf{Art. 4º}. Falta é tudo que, na doutrina e prática dos membros e concílios da igreja, não esteja de conformidade com os ensinamentos da Sagrada Escritura, ou transgrida e prejudique a paz, a unidade, a pureza, a ordem e a boa administração da comunidade cristã.
 
     \textbf{Parágrafo único}. Nenhum tribunal eclesiástico poderá considerar como falta, ou admitir como matéria de acusação aquilo que não possa ser provado como tal pela Escritura, segundo a interpretação dos Símbolos da Igreja \cite[art.~4]{ipb_codigodisciplina}
 \end{citacao} 
@@ -154,6 +154,57 @@ A falta de soberania sobre os sistemas utilizados impede que a igreja tenha gara
 O risco de delegar a gestão dos dados pastorais a empresas terceirizadas foi evidenciado por casos como o da InChurch\cite{almeida_inchurch_2024}, já citado no capítulo anterior, que expôs milhares de registros de fiéis devido a falhas técnicas. A situação reforça a urgência de repensar a dependência tecnológica da igreja diante de sua responsabilidade ética e espiritual.
 
 Tal vulnerabilidade não é apenas uma falha técnica, mas uma questão de mordomia cristã. A igreja é chamada a zelar pelo rebanho, o que inclui a proteção das informações que lhe são confiadas. Portanto, torna-se urgente que as lideranças eclesiásticas reflitam sobre os riscos da dependência digital e busquem alternativas que respeitem a soberania tecnológica e a responsabilidade pastoral diante de Deus e das pessoas.
+
+\subsection{Panorama da conformidade digital na IPB}
+
+Com o objetivo de avaliar a presença e a maturidade digital de igrejas da \gls{ipb} frente às exigências da \gls{lgpd}, foi realizada uma análise técnica sobre os dados públicos disponíveis no site \url{https://www.icalvinus.app/consulta_ipb/anuario_igrejas.html}, que reúne informações extraídas do Anuário da \gls{ipb}. O levantamento considerou os domínios informados por 2.935 igrejas cadastradas e verificou aspectos básicos de conformidade digital e a presença de políticas de privacidade.
+
+A coleta foi realizada manualmente, com apoio de ferramentas automatizadas de varredura e inspeção de conteúdo. O processamento dos dados foi concluído em 20 de junho de 2025. O código utilizado no processo de análise está disponível publicamente em \url{https://github.com/vitormattos/webscraping-anuario-igrejas-ipb}, com o objetivo de garantir transparência e reprodutibilidade da metodologia aplicada.
+
+A seguir, apresenta-se a tabela com os principais achados da amostra.
+
+\begin{table}[H]
+\centering
+\begin{threeparttable}
+\caption{Panorama da adequação à \gls{lgpd} em sites de igrejas da \gls{ipb}}
+\rowcolors{2}{gray!10}{white}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X c}
+\toprule
+\textbf{Indicador} & \textbf{Quantidade} \\
+\midrule
+Total de igrejas \gls{ipb} analisadas & 2935 \\
+Igrejas com site informado no cadastro\tnote{a} & 640 \\
+Endereços que não são redes sociais\tnote{b} & 532 \\
+Endereços válidos e ativos\tnote{c} & 219 \\
+Sites com qualquer menção à \gls{lgpd} & 22 \\
+Com aviso de uso de cookies & 16 \\
+Com Política de Privacidade publicada & 15 \\
+Com e-mail genérico indicando canal de DPO\tnote{d} & 12 \\
+Com formulário específico para solicitação de direitos do titular\tnote{e} & 5 \\
+Com \gls{dpo} identificado\tnote{f} & 2 \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}
+\footnotesize
+\item[a] Embora 640 igrejas tenham informado endereços de páginas web, muitos desses estão completamente inválidos, com textos que não dizem respeito a uma página web.
+\item[b] Sites com endereços de páginas web válidas do ponto de vista técnico, mas que não necessariamente levam a sites ativos.
+\item[c] Sites que exibem algum conteúdo, mas não necessariamente estão em conformidade com a LGPD. Embora apresentem páginas da igreja, muitas delas contêm falhas de segurança, mensagens de erro ou até mesmo indícios de comprometimento parcial por terceiros.
+\item[d] Por exemplo: adm@paginadaigreja.org.br, contato@paginadaigreja.org.br e não endereços de endereço eletrônico de pessoas.
+\item[e] Refere-se à presença de um formulário eletrônico próprio que permite ao titular do dado pessoal exercer seus direitos previstos na \gls{lgpd}, como acesso, correção, exclusão ou portabilidade de dados.
+\item[f] O \gls{dpo}, ou Encarregado de Dados como definido na \gls{lgpd}, foi identificado nominalmente, com endereço eletrônico para contato.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+Além dos dados quantitativos apresentados, foi possível identificar que pelo menos 8 dos sites analisados foram desenvolvidos pela empresa \mbox{InChurch}, já mencionada nesta monografia em razão do episódio de exposição de mais de 9,2 milhões de arquivos, que resultou no vazamento que resultou no vazamento de quase um milhão de informações sensíveis de usuários\cite{almeida_inchurch_2024}.
+
+Esses 8 sites fazem parte de um grupo maior de aproximadamente 50 páginas desenvolvidas principalmente por quatro empresas\footnote{\mbox{InChurch}, \mbox{Inovaki}, \mbox{Igreja Smart} e \mbox{Eklesia}} que, à época da análise, foram identificadas no Anuário de Igrejas da \gls{ipb} e não apresentavam os elementos mínimos exigidos pela \gls{lgpd}, como política de privacidade, identificação do encarregado de dados ou canal específico para o exercício dos direitos dos titulares.
+
+Essa constatação aponta que, embora igrejas estejam em processo de digitalização de seus canais de comunicação, a contratação de serviços de terceiros sem critérios claros de conformidade pode comprometer a proteção de dados dos membros e fragilizar o testemunho ético da igreja no ambiente digital.
+
+Dos dois sites que apresentaram todos os elementos mínimos de conformidade com a \gls{lgpd}, um pertence à Igreja Presbiteriana da Freguesia (RJ) e outro a Igreja Presbiteriana de Alphaville (SP). Ambos disponibilizam política de privacidade, canal de atendimento ao titular e identificação nominal de encarregado.
+
+Ainda assim, é importante destacar que a simples nomeação de um \gls{dpo} no site da igreja não garante que esse profissional esteja registrado junto à \gls{anpd}, como orienta o Guia de Boas Práticas da própria autoridade nacional. A atualização desses dados, bem como sua comunicação formal à \gls{anpd}, é responsabilidade da administração eclesiástica e deve ser compreendida como parte do testemunho de obediência da igreja à legislação vigente.
 
 \subsection{O invisível que sustenta o visível}
 
