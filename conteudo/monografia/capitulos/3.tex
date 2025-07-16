@@ -165,45 +165,9 @@ Tal vulnerabilidade não é apenas uma falha técnica, mas uma questão de mordo
 
 \subsection{Panorama da conformidade digital na IPB}
 
-Com o objetivo de avaliar a presença e a maturidade digital de igrejas da \gls{ipb} frente às exigências da \gls{lgpd}, foi realizada uma análise técnica sobre os dados públicos disponíveis no site \url{https://www.icalvinus.app/consulta_ipb/anuario_igrejas.html}, que reúne informações extraídas do Anuário da \gls{ipb}. O levantamento considerou os domínios informados por 2.935 igrejas cadastradas e verificou aspectos básicos de conformidade digital e a presença de políticas de privacidade.\footnote{A coleta foi realizada manualmente, com apoio de ferramentas automatizadas de varredura e inspeção de conteúdo. O processamento dos dados foi concluído em 20 de junho de 2025. O código utilizado no processo de análise está disponível publicamente em \url{https://github.com/vitormattos/webscraping-anuario-igrejas-ipb}, com o objetivo de garantir transparência e reprodutibilidade da metodologia aplicada.}
+Com o objetivo de avaliar a presença e a maturidade digital de igrejas da \gls{ipb} frente às exigências da \gls{lgpd}, foi realizada uma análise técnica sobre os dados públicos disponíveis no site \url{https://www.icalvinus.app/consulta_ipb/anuario_igrejas.html}, que reúne informações extraídas do Anuário da \gls{ipb}. O levantamento considerou os domínios informados por 2.935 igrejas cadastradas e verificou aspectos básicos de conformidade digital e a presença de políticas de privacidade.\footnote{A coleta foi realizada manualmente, com apoio de ferramentas automatizadas de varredura e inspeção de conteúdo. O processamento dos dados foi concluído em 20 de junho de 2025. O código utilizado no processo de análise está disponível publicamente em \url{https://github.com/vitormattos/webscraping-anuario-igrejas-ipb}, com o objetivo de garantir transparência e reprodutibilidade da metodologia aplicada.} Este estudo consta no \hyperref[apendice:adequacao_sites]{Apêndice~\ref*{apendice:adequacao_sites}}
 
-A seguir, apresenta-se a tabela com os principais achados da amostra.
-
-\begin{table}[H]
-\centering
-\begin{threeparttable}
-\caption{Panorama da adequação à \gls{lgpd} em sites de igrejas da \gls{ipb}}
-\label{tabela:panorama_adequacao_ipb}
-\rowcolors{2}{gray!10}{white}
-\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X c}
-\toprule
-\textbf{Indicador} & \textbf{Quantidade} \\
-\midrule
-Total de igrejas \gls{ipb} analisadas & 2935 \\
-Igrejas com site informado no cadastro\tnote{a} & 640 \\
-Endereços que não são redes sociais\tnote{b} & 532 \\
-Endereços válidos e ativos\tnote{c} & 219 \\
-Sites com qualquer menção à \gls{lgpd} & 22 \\
-Com aviso de uso de cookies & 16 \\
-Com Política de Privacidade publicada & 15 \\
-Com e-mail genérico indicando canal de DPO\tnote{d} & 12 \\
-Com formulário específico para solicitação de direitos do titular\tnote{e} & 5 \\
-Com \gls{dpo} identificado\tnote{f} & 2 \\
-\bottomrule
-\end{tabularx}
-\begin{tablenotes}
-\footnotesize
-\item[a] Embora 640 igrejas tenham informado endereços de páginas web, muitos desses estão completamente inválidos, com textos que não dizem respeito a uma página web.
-\item[b] Sites com endereços de páginas web válidas do ponto de vista técnico, mas que não necessariamente levam a sites ativos.
-\item[c] Sites que exibem algum conteúdo, mas não necessariamente estão em conformidade com a LGPD. Embora apresentem páginas da igreja, muitas delas contêm falhas de segurança, mensagens de erro ou até mesmo indícios de comprometimento parcial por terceiros.
-\item[d] Por exemplo: adm@paginadaigreja.org.br, contato@paginadaigreja.org.br e não endereços de endereço eletrônico de pessoas.
-\item[e] Refere-se à presença de um formulário eletrônico próprio que permite ao titular do dado pessoal exercer seus direitos previstos na \gls{lgpd}, como acesso, correção, exclusão ou portabilidade de dados.
-\item[f] O \gls{dpo}, ou Encarregado de Dados como definido na \gls{lgpd}, foi identificado nominalmente, com endereço eletrônico para contato.
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
-
-Além dos dados quantitativos apresentados, foi possível identificar que pelo menos 8 dos sites analisados foram desenvolvidos pela empresa \mbox{InChurch}, já mencionada nesta monografia em razão do episódio de exposição de mais de 9,2 milhões de arquivos, que resultou no vazamento de quase um milhão de informações sensíveis de usuários\cite{almeida_inchurch_2024}.
+Além dos dados quantitativos apresentados na \hyperref[tabela:panorama_adequacao_ipb]{Tabela~\ref*{tabela:panorama_adequacao_ipb}} que consta no \hyperref[apendice:adequacao_sites]{Apêndice~\ref*{apendice:adequacao_sites}}, foi possível identificar que pelo menos 8 dos sites analisados foram desenvolvidos pela empresa \mbox{InChurch}, já mencionada nesta monografia em razão do episódio de exposição de mais de 9,2 milhões de arquivos, que resultou no vazamento de quase um milhão de informações sensíveis de usuários\cite{almeida_inchurch_2024}.
 
 Esses 8 sites fazem parte de um grupo maior de aproximadamente 50 páginas desenvolvidas principalmente por quatro empresas\footnote{\mbox{InChurch}, \mbox{Inovaki}, \mbox{Igreja Smart} e \mbox{Eklesia}} que, à época da análise, foram identificadas no Anuário de Igrejas da \gls{ipb} e não apresentavam os elementos mínimos exigidos pela \gls{lgpd}, como política de privacidade, identificação do encarregado de dados ou canal específico para o exercício dos direitos dos titulares.
 
@@ -221,7 +185,7 @@ Ainda que a IPB demonstre avanços em alguns aspectos da conformidade digital, a
 
 Com o objetivo de avaliar a exposição de dados de pastores de igrejas da \gls{ipb}, foi realizada uma análise técnica sobre os dados públicos disponíveis no site \url{https://www.icalvinus.app/consulta_ipb/anuario_igrejas.html}\footnote{iCalvinus é um sistema de gestão para igrejas presbiterianas}, que reúne informações extraídas do Anuário da \gls{ipb}.\footnote{A coleta foi realizada manualmente, com apoio de ferramentas automatizadas de varredura e inspeção de conteúdo. O processamento dos dados foi concluído em 20 de junho de 2025. O código utilizado no processo de análise está disponível publicamente em \url{https://github.com/vitormattos/webscraping-anuario-igrejas-ipb}, com o objetivo de garantir transparência e reprodutibilidade da metodologia aplicada.}
 
-Com o levantamento realizado, foram identificados dados de 2.124 pastores, incluindo endereços de e-mail e números de telefone celular. Essa exposição representa riscos críticos à segurança e à privacidade dos pastores. Entre os principais riscos estão:
+Com o levantamento realizado, foram identificados dados de 2.857 pastores, incluindo endereços de e-mail e números de telefone celular. Essa exposição representa riscos críticos à segurança e à privacidade dos pastores. Entre os principais riscos estão:
 
 \begin{itemize}
     \item \textbf{SPAM}\footnote{Na sua forma mais popular, \textit{spam} é sinônimo de lixo de correio eletrônico e designa mensagens de e-mail com fins publicitários. \cite{wiki_spam}}: embora considerado um risco de menor gravidade, trata-se de uma fonte constante de incômodo, podendo incluir desde propaganda comercial até conteúdo inapropriado. Alguns pastores consultados relataram receber regularmente esse tipo de mensagem.
@@ -235,7 +199,7 @@ Com o levantamento realizado, foram identificados dados de 2.124 pastores, inclu
 
 Embora o endereço de e-mail seja um dado comumente compartilhado, a exposição irrestrita compromete a segurança de uma ferramenta essencial para o exercício ministerial. É importante equilibrar o princípio da transparência institucional com o da segurança individual.
 
-A análise também revelou a exposição de mais de 2.000 números de celular. Trata-se de um dado pessoal e identificador único, semelhante a um CPF. Com acesso a esse dado, é possível, por meio de fontes diversas\footnote{Como operadoras de telefonia, bancos de dados vazados e serviços especializados}, obter informações adicionais como endereço residencial, nomes de parentes, informações bancárias e documentos. Esses dados podem ser utilizados em golpes, extorsões ou fraudes de identidade, colocando os pastores em situações de vulnerabilidade extrema, inclusive como ``laranjas''\footnote{Pessoa usada para ocultar a identidade de beneficiários em transações ilegais, como lavagem de dinheiro.\cite{wiki_laranja}} sem seu conhecimento.
+A análise também revelou a exposição de 2.808 números de celular. Trata-se de um dado pessoal e identificador único, semelhante a um CPF. Com acesso a esse dado, é possível, por meio de fontes diversas\footnote{Como operadoras de telefonia, bancos de dados vazados e serviços especializados}, obter informações adicionais como endereço residencial, nomes de parentes, informações bancárias e documentos. Esses dados podem ser utilizados em golpes, extorsões ou fraudes de identidade, colocando os pastores em situações de vulnerabilidade extrema, inclusive como ``laranjas''\footnote{Pessoa usada para ocultar a identidade de beneficiários em transações ilegais, como lavagem de dinheiro.\cite{wiki_laranja}} sem seu conhecimento.
 
 Medidas simples poderiam ser implementadas para mitigar esses riscos, como:
 
