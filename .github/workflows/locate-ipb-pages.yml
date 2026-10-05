@@ -1,0 +1,32 @@
+name: Locate IPB analysis pages
+
+on:
+  push:
+    branches:
+      - analysis/find-ipb-monograph-pages
+
+permissions:
+  contents: read
+
+jobs:
+  locate:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/xu-cheng/texlive-full
+    steps:
+      - uses: actions/checkout@v5
+      - name: Compile monograph
+        run: make monografia
+      - name: Locate IPB website analysis pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          pages=$(pdfinfo monografia.pdf | awk '/^Pages:/ {print $2}')
+          echo "PDF pages: $pages"
+          for p in $(seq 1 "$pages"); do
+            text=$(pdftotext -f "$p" -l "$p" -layout monografia.pdf - 2>/dev/null || true)
+            if printf '%s' "$text" | grep -Eqi 'avaliar a exposição de dados de pastores|icalvinus|Anuário da IPB|webscraping-anuario-igrejas-ipb'; then
+              echo "MATCH_PAGE=$p"
+              printf '%s\n' "$text" | grep -Ein -C 4 'avaliar a exposição de dados de pastores|icalvinus|Anuário da IPB|webscraping-anuario-igrejas-ipb' || true
+            fi
+          done
